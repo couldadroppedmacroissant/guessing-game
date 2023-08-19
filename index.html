@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing game</title>
+    <link rel="stylesheet" href="guess.css">
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <h1>GUESSING GAME</h2>
+        </div>
+        <div class="rangeBody">
+            <div class="brief">
+                <p>For the game to begin, you're required to enter the range of the number you're going to be guessing. For instance, if you want to guess numbers from 1 to 20, enter 1 on the first input box and 20 on the second one below. Skipping this section will have you guess numbers from 1 to 10 inclusively.</p>
+            </div>
+            <div class="range">
+                <input type="number" id="lowerBound">
+                <input type="number" id="upperBound">
+            </div>
+            <div class="errorMessage">
+                <label for="" id="rangeError"></label>
+            </div>
+            <div class="footer">
+                <button class="buttons" id="skip">SKIP</button>
+            </div>
+        </div>
+        <div class="guessingBody">
+            <div class="brief">
+                <p class="guessingBrief"></p>
+            </div>
+            <div class="input">
+                <input type="number" name="" id="input">
+            </div>
+            <div class="errorMessage">
+                <label for="" id="guessingError"></label>
+            </div>
+            <div class="info">
+                <label for="" id="info"></label>
+            </div>
+            <div class="footer">
+                <button class="buttons" id="startOver">START OVER</button>
+                <button class="buttons" id="tellMe">TELL ME THE NUMBER</button>
+            </div>
+            <div class="needHelp"></div>
+            <div class="result">
+                <label for="" id="result"></label>
+            </div>
+        </div>
+    </div>
+
+    <script src="guess.js"></script>
+</body>
+</html>
